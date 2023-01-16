@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block css %}
+{% load static %}
+<link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top: 200px; background-color: rgba(31, 31, 31, 0.57); border-radius: 45px;">
+	<div class="content" style="width: 100%; margin: 15px; padding: 15px">
+		<div class="title">
+			<h2 class="title" style="margin-bottom: 30px; color: white;">Начало истории развития отечественной космонавтики</h2>
+		</div>
+		<div class="row">
+			<div class="col" style="text-align: center;">
+			    {% if answered %}
+                    <h4 style="color: white">Вы ответили на {{ res }} вопросов правильно!</h4>
+                {% else %}
+    			    <form method="POST">
+                        {% csrf_token %}
+                        <h4 style="color: white">
+                            Первый мужчина полетевший в космос?
+                        </h4>
+                        {{ form.first }}
+                        <h4 style="color: white; margin-top: 30px">
+                            Первая женщина полетевшая в космос?
+                        </h4>
+                        {{ form.second }}
+                        <h4 style="color: white; margin-top: 30px">
+                            Первое животное полетевшое в космос?
+                        </h4>
+                        {{ form.third }}
+                        <h4 style="color: white; margin-top: 30px">
+                            Сколько времени провел Юрий Гагарин в космосе?
+                        </h4>
+                        {{ form.fourth }}
+                        <h4 style="color: white; margin-top: 30px">
+                            Кто был первым теоретиком межпланетных полётов?
+                        </h4>
+                        {{ form.fiveth }}
+                        <div style="margin-top: 30px">
+                            <input type = "submit" value = "Проверить себя!">
+                        </div>
+                    </form>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

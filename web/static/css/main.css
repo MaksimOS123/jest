@@ -1,0 +1,68 @@
+html, body {
+	background: #000 url("/static/img/back.png");
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.Main_Title {
+	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 150px;
+	text-align: center;
+	height: 100%;
+
+	color: #FFFFFF;
+	margin-top: 350px;
+
+	text-shadow: 0px 4px 49px #000000;
+}
+
+.MyNavBar {
+	color: rgba(255, 255, 255, 0.63) !important;
+	font-family: "Rockwell Condensed", "Rockwell Bold", monospace;
+	font-size: 40px !important;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 47px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-right: 35px;
+	margin-top: 10px;
+}
+
+.MyNavBarActivate {
+	color: white !important;
+	font-family: "Rockwell Condensed", "Rockwell Bold", monospace;
+	font-size: 40px !important;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 47px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-right: 35px;
+	margin-top: 10px;
+}
+
+.MyNavBar:hover {
+	color: white !important;
+	font-family: "Rockwell Condensed", "Rockwell Bold", monospace;
+	font-size: 40px !important;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 47px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+    vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
